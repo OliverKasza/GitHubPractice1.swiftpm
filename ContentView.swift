@@ -13,6 +13,9 @@ struct ContentView: View {
         }label: {
             Text("Add")
         }
+        Text("\(number1)")
+        Text("\(number2)")
+
 
     }
 }
