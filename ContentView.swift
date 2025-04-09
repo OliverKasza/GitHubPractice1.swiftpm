@@ -5,6 +5,7 @@ struct ContentView: View {
     @State var answer = 3
     @State var number1 = 0
     @State var number2 = 0
+    @State var var3 = 0
     
     //Did a thing with a thing
     var body: some View {
