@@ -3,16 +3,11 @@ import SwiftUI
 struct ContentView: View {
     
     @State var answer = 3
-    @State var number1 = 0
-    @State var number2 = 0
+    @State var number1 = 5
+    @State var number2 = 2
     
     //Did a thing with a thing
     var body: some View {
-        Button() {
-            answer = number1 + number2
-        }label: {
-            Text("Add")
-        }
         Text("Number 1: \(number1)")
             .fontWeight(.bold)
             .foregroundStyle(.blue)
@@ -29,23 +24,39 @@ struct ContentView: View {
             .frame(width: 150)
             .background(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/).fill(Color.orange))
         
+        //Add Button
+        Button() {
+            answer = number1 + number2
+            print("\(number1) + \(number2) = \(answer)")
+
+        }label: {
+            Text("Add")
+        }
+        //Multiply Button
         Button() {
             answer = number1 * number2
+            print("\(number1) * \(number2) = \(answer)")
         }label: {
             Text("Multiply")
         }
         
+        //Divide Button
         Button() {
             answer = number1 / number2
+            print("\(number1) / \(number2) = \(answer)")
+
         }label: {
             Text("Divide")
         }
-        //subtract number 1 and 2
+        //Subtract Button
         Button() {
             answer = number1 - number2
+            print("\(number1) - \(number2) = \(answer)")
         }label: {
             Text("subtract")
         }
 
+
+        
     }
 }
