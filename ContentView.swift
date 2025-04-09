@@ -8,7 +8,11 @@ struct ContentView: View {
     
     //Did a thing with a thing
     var body: some View {
-        
+        Button() {
+            answer = number1 + number2
+        }label: {
+            Text("Add")
+        }
 
     }
 }
