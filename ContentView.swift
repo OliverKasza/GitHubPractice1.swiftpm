@@ -15,6 +15,8 @@ struct ContentView: View {
         }
         Text("\(number1)")
         Text("\(number2)")
+        Text("\(answer)")
+
 
 
     }
