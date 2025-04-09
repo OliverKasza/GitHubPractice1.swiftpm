@@ -28,6 +28,12 @@ struct ContentView: View {
         }label: {
             Text("Divide")
         }
+        //subtract number 1 and 2
+        Button() {
+            answer = number1 - number2
+        }label: {
+            Text("subtract")
+        }
 
     }
 }
